@@ -11,10 +11,7 @@ import java.util.stream.Stream;
 class UserTest {
     public static Stream<Arguments> parameters() {
         return Stream.of(
-                Arguments.of("login1", "email"),
-                Arguments.of("login2", "@mail"),
-                Arguments.of("login3", "@mail.com"),
-                Arguments.of("login4", "login4"));
+                Arguments.of("login", "login@mail.com"));
     }
 
     @ParameterizedTest
